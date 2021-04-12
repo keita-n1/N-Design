@@ -8,7 +8,7 @@ body {
 font-size: 1.6rem;
 font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 color: #333;
-background-color: #f1f2f1;
+background-color: #f1f1f1;
 }
 a {
 text-decoration: none;
@@ -119,10 +119,39 @@ ____________________________________________ */
 
 /* block
 ________________________________________*/
-/*ヘッダーlogo*/
+/*header*/
+.js_drawer {
+    transform: translateX(-300px);
+}
 .bl_headLogo {
     padding: 30px;
     width: 200px;
+}
+.bl_headerNav_wrap {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: #333;
+    z-index: 1;
+    transition: transform .3s;
+}
+.bl_headerNav {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    text-align: center;
+}
+.bl_headerNav_item {
+    margin-bottom: 40px;
+}
+.bl_headerNav_item > a {
+    color: #D7A200;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
 }
 /*footer navi*/
 .bl_footerNav {
@@ -142,6 +171,7 @@ ________________________________________*/
     height: 44px;
     cursor: pointer;
     margin-right: 30px;
+    z-index: 2;
 }
 .bl_hamburger span {
     position: absolute;
@@ -190,7 +220,12 @@ ________________________________________*/
         transform: translateY(0) rotate(0);
     }
 }
+.bl_hamburger.active {
+    position: fixed;
+    right: 0;
+}
 .bl_hamburger.active span:nth-of-type(1) {
+    background-color: #D7A200;
     animation: active-btn-bar1 .75s forwards;
 }
 @keyframes active-btn-bar1 {
@@ -208,6 +243,7 @@ ________________________________________*/
     opacity: 0;
 }
 .bl_hamburger.active span:nth-of-type(3) {
+    background-color: #D7A200;
     animation: active-btn-bar3 .75s forwards;
 }
 @keyframes active-btn-bar3 {
@@ -269,6 +305,24 @@ ____________________________________________ */
     }
     /*block
     _________________________________________*/
+    /*hamburger*/
+    .bl_hamburger {
+        display: none;
+    }
+    .bl_headerNav_wrap {
+        position: static;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+    }
+    .bl_headerNav {
+        transform: none;
+        display: flex;
+    }
+    .bl_headerNav_item {
+        margin-right: 40px;
+        margin-bottom: 0;
+    }
     /*card*/
     .bl_cardUnit_3col {
         display: grid;
