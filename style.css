@@ -28,14 +28,28 @@ ________________________________________*/
     justify-content: space-between;
     align-items: center;
 }
+.ly_section {
+    padding: 0 30px;
+    margin-bottom: 120px;
+}
+
 /* element
 ____________________________________________ */
+.el_lv2Heading {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
 /* block
 ________________________________________*/
 /*ヘッダーlogo*/
 .bl_headLogo {
     padding: 30px;
     width: 200px;
+}
+/*mainImg*/
+.bl_mainImg {
+    margin-bottom: 80px;
 }
 /*ハンバーガー*/
 .bl_hamburger {
@@ -123,7 +137,46 @@ ________________________________________*/
         transform: translateY(-20px) rotate(-45deg);
     }
 }
-/* modifier
-____________________________________________ */
+/*card*/
+.bl_cardUnit {
+    margin-bottom: 80px;
+}
+.bl_cardUnit_img {
+    width: 180px;
+    height: 120px;
+    margin: 0 auto;
+    padding-right: 16px;
+}
+.bl_cardUnit_img > img {
+    transform: rotate(-15deg);
+}
+.bl_cardUnit_img__cording {
+    width: 140px;
+    padding-top: 15px;
+}
 /* helper
 ____________________________________________ */
+
+/*-------------------------
+レスポンシブ
+--------------------------*/
+@media screen and (min-width: 600px) {
+    .ly_section_inner {
+        width: 400px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 1025px) {
+    /*layout
+    _________________________________________*/
+    .ly_section_inner {
+        width: 920px;
+    }
+    /*block
+    _________________________________________*/
+    .bl_cardUnit_3col {
+        display: grid;
+        gap: 40px;
+        grid-template-columns: repeat(3, minmax(280px, 1fr));
+    }
+}
