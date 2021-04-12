@@ -8,6 +8,7 @@ body {
 font-size: 1.6rem;
 font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 color: #333;
+background-color: #f1f2f1;
 }
 a {
 text-decoration: none;
@@ -21,6 +22,7 @@ object-fit: cover;
 figure {
 margin: 0;
 }
+
 /* layout
 ________________________________________*/
 .ly_header {
@@ -32,14 +34,76 @@ ________________________________________*/
     padding: 0 30px;
     margin-bottom: 120px;
 }
+.ly_btn {
+    text-align: center;
+}
 
 /* element
 ____________________________________________ */
+/*head*/
 .el_lv2Heading {
     font-size: 5rem;
     text-align: center;
     margin-bottom: 40px;
+    letter-spacing: 0.1em;
 }
+.el_lv3Heading {
+    font-size: 2rem;
+}
+/*button*/
+.el_btn {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #D7A200;
+    color: #D7A200;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    font-weight: bold;
+    overflow: hidden;
+}
+.el_btn::before,
+.el_btn::after {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #D7A200;
+    transform: translateY(6px);
+    transition: all .3s;
+    z-index: -1;
+}
+.el_btn::before {
+    left: -20px;
+}
+.el_btn::after {
+    right: -20px;
+}
+.el_btn:hover {
+    color: #fff;
+}
+.el_btn:hover::before {
+    left: 45%;
+}
+.el_btn:hover::after {
+    right: 45%;
+}
+.el_btn:hover::before,
+.el_btn:hover::after {
+    animation: scaleUp .2s ease-in .3s forwards;
+}
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(20);
+    }
+}
+
 /* block
 ________________________________________*/
 /*ヘッダーlogo*/
@@ -139,7 +203,9 @@ ________________________________________*/
 }
 /*card*/
 .bl_cardUnit {
-    margin-bottom: 80px;
+    max-width: 280px;
+    margin: 0 auto 40px;
+    display: block;
 }
 .bl_cardUnit_img {
     width: 180px;
@@ -150,10 +216,14 @@ ________________________________________*/
 .bl_cardUnit_img > img {
     transform: rotate(-15deg);
 }
+.bl_cardUnit__service {
+    margin-bottom: 80px;
+}
 .bl_cardUnit_img__cording {
     width: 140px;
     padding-top: 15px;
 }
+
 /* helper
 ____________________________________________ */
 
@@ -161,22 +231,25 @@ ____________________________________________ */
 レスポンシブ
 --------------------------*/
 @media screen and (min-width: 600px) {
-    .ly_section_inner {
-        width: 400px;
-        margin: 0 auto;
-    }
+
 }
 @media screen and (min-width: 1025px) {
     /*layout
     _________________________________________*/
     .ly_section_inner {
         width: 920px;
+        margin: 0 auto;
     }
     /*block
     _________________________________________*/
+    /*card*/
     .bl_cardUnit_3col {
         display: grid;
         gap: 40px;
-        grid-template-columns: repeat(3, minmax(280px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    /*card service*/
+    .bl_cardUnit__service {
+        margin-bottom: 0;
     }
 }
