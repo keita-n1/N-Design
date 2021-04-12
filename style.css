@@ -22,6 +22,10 @@ object-fit: cover;
 figure {
 margin: 0;
 }
+ul {
+    list-style: none;
+    padding: 0;
+}
 
 /* layout
 ________________________________________*/
@@ -33,6 +37,9 @@ ________________________________________*/
 .ly_section {
     padding: 0 30px;
     margin-bottom: 120px;
+}
+.ly_footer {
+    padding: 0 30px;
 }
 .ly_btn {
     text-align: center;
@@ -103,6 +110,12 @@ ____________________________________________ */
         transform: scale(20);
     }
 }
+/*コピーライト*/
+.el_copyRight {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
 /* block
 ________________________________________*/
@@ -110,6 +123,13 @@ ________________________________________*/
 .bl_headLogo {
     padding: 30px;
     width: 200px;
+}
+/*footer navi*/
+.bl_footerNav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 40px;
+    max-width: 400px;
 }
 /*mainImg*/
 .bl_mainImg {
@@ -240,6 +260,13 @@ ____________________________________________ */
         width: 920px;
         margin: 0 auto;
     }
+    /*footer*/
+    .ly_footer_inner {
+        display: flex;
+        justify-content: space-between;
+        width: 920px;
+        margin: 0 auto;
+    }
     /*block
     _________________________________________*/
     /*card*/
@@ -251,5 +278,9 @@ ____________________________________________ */
     /*card service*/
     .bl_cardUnit__service {
         margin-bottom: 0;
+    }
+    /*footer*/
+    .bl_footerNav {
+        width: 400px;
     }
 }
