@@ -307,12 +307,12 @@ ________________________________________*/
 }
 
 /*form*/
-.bl_form {
+form {
     max-width: 500px;
     margin: 40px auto 0;
 }
-.bl_form > input,
-.bl_form > textarea {
+form input,
+form textarea {
     width: 100%;
     height: 50px;
     padding: 0 15px;
@@ -321,16 +321,16 @@ ________________________________________*/
     border-bottom: none;
     outline: 0;
 }
-.bl_form > textarea {
+form textarea {
     height: 110px;
     padding: 15px;
 }
-.bl_form > input:last-child {
+form input:last-child {
     margin-top: -6px;
     border-bottom: 1px solid #bbb;
 }
-.bl_form > input:hover,
-.bl_form > textarea:hover {
+form input:hover,
+form textarea:hover {
     background: #aaa;
     color: #eee;
 }
