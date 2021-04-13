@@ -1,0 +1,20 @@
+<?php get_header(); ?>
+<section class="ly_section">
+    <div class="ly_section_inner">
+        <?php
+        if (have_posts() ):
+            while (have_posts() ): the_post();
+            ?>
+        <h2 class=el_lv2Heading><?php the_title(); ?></h2>
+        <div class="bl_cont"><?php the_content(); ?></div>
+            <?php
+            endwhile;
+        endif;
+        ?>
+        <div class="bl_pagination">
+            <div class="bl_pagination_prev"><?php previous_post_link('%link', '<i class="fas fa-angle-left"></i> %title'); ?></div>
+            <div class="bl_pagination_next"><?php next_post_link('%link', '%title <i class="fas fa-angle-right"></i>'); ?></div>
+        </div>
+    </div><!--/.lu_section_inner-->
+</section>
+<?php get_footer();

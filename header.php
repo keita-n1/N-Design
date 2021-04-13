@@ -11,7 +11,7 @@
         <!--header-->
         <div class="ly_header">
             <!--logo-->
-            <a href="#"><img class="bl_headLogo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/N-Design_logo.png" alt="logo"></a>
+            <a href="<?php echo esc_url(home_url() ); ?>"><img class="bl_headLogo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/N-Design_logo.png" alt="logo"></a>
             <!--hamburger-->
             <div class="bl_hamburger">
                 <span></span>

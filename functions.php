@@ -7,6 +7,8 @@ function enqueue_scripts() {
     //JavaScript,jQuery読み込み
     wp_enqueue_script('jquery-min-js', get_stylesheet_directory_uri() . '/script/jquery-3.6.0.min.js', array(), '3.6.0', true );
     wp_enqueue_script('custom-script', get_stylesheet_directory_uri() . '/script/script.js', array('jquery-min-js'), '', true );
+    //fontawesome
+    wp_enqueue_style('fontawesome', 'https://use.fontawesome.com/releases/v5.2.0/css/all.css');
 }
 add_action('wp_enqueue_scripts', 'enqueue_scripts');
 
