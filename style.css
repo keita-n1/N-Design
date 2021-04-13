@@ -152,10 +152,10 @@ ________________________________________*/
     margin: 0;
     text-align: center;
 }
-.bl_headerNav_item {
+.bl_headerNav > .menu-item {
     margin-bottom: 40px;
 }
-.bl_headerNav_item > a {
+.bl_headerNav > .menu-item > a {
     color: #D7A200;
     font-size: 2rem;
     font-weight: bold;
@@ -382,9 +382,12 @@ ________________________________________*/
         transform: none;
         display: flex;
     }
-    .bl_headerNav_item {
+    .menu-item {
         margin-right: 40px;
         margin-bottom: 0;
+    }
+    .bl_headerNav > .menu-item {
+        margin-bottom: 0px;
     }
     /*card*/
     .bl_cardUnit_3col {
