@@ -280,6 +280,25 @@ ________________________________________*/
     width: 140px;
     padding-top: 15px;
 }
+/*card pageo-works*/
+.bl_cardUnit__gold {
+    position: relative;
+    margin-bottom: 80px;
+}
+.bl_cardUnit__gold img {
+    width: 100%;
+    max-height: 173px;
+}
+.bl_cardUnit_tit {
+    position: absolute;
+    bottom: -15px;
+    right: -10px;
+    font-size: 4rem;
+    transform: rotate(-15deg);
+    color: #D7A200;
+    text-shadow: 4px 4px 8px #333;
+}
+
 /*form*/
 .bl_form {
     max-width: 500px;
