@@ -305,7 +305,6 @@ ________________________________________*/
     color: #D7A200;
     text-shadow: 4px 4px 8px #333;
 }
-
 /*form*/
 form {
     max-width: 500px;
@@ -334,6 +333,22 @@ form textarea:hover {
     background: #aaa;
     color: #eee;
 }
+/*wp_content*/
+.bl_cont {
+    margin-bottom: 80px;
+}
+/*pagination*/
+.bl_pagination_prev {
+    margin-bottom: 20px;
+}
+.fa-angle-left {
+    margin-right: 10px;
+    color: #D7A200;
+}
+.fa-angle-right {
+    margin-left: 10px;
+    color: #D7A200;
+}
 
 /* helper
 ____________________________________________ */
@@ -361,6 +376,14 @@ ____________________________________________*/
         display: grid;
         gap: 40px;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    /*pagenation*/
+    .bl_pagination {
+        display: flex;
+        justify-content: space-between;
+    }
+    .bl_pagination_prev {
+        margin-bottom: 0;
     }
 }
 @media screen and (min-width: 1025px) {
