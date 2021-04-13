@@ -15,3 +15,12 @@ function theme_setup() {
     add_theme_support('title-tag');
 }
 add_action('after_setup_theme', 'theme_setup');
+
+//ナビゲーション
+function add_menus() {
+    register_nav_menus(array(
+        'header_nav' => 'ヘッダーに表示されるナビゲーション',
+        'footer_nav' => 'フッターに表示されるナビゲーション',
+    ));
+}
+add_action('after_setup_theme', 'add_menus');

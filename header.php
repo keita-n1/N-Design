@@ -19,12 +19,13 @@
                 <span></span>
             </div>
             <!--header nav-->
-            <nav class="bl_headerNav_wrap">
-                <ul class="bl_headerNav">
-                    <li class="bl_headerNav_item"><a href="#">Profile</a></li>
-                    <li class="bl_headerNav_item"><a href="#">Works</a></li>
-                    <li class="bl_headerNav_item"><a href="#">Blog</a></li>
-                    <li class="bl_headerNav_item"><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+            <?php
+            $args = array(
+                'theme_location' => 'header_nav',
+                'container' => 'nav',
+                'container_class' => 'bl_headerNav_wrap',
+                'menu_class' => 'bl_headerNav',
+            );
+            wp_nav_menu($args);
+            ?>
         </div><!--/.ly_header-->
