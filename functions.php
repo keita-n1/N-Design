@@ -13,6 +13,8 @@ add_action('wp_enqueue_scripts', 'enqueue_scripts');
 function theme_setup() {
     //titleタグ
     add_theme_support('title-tag');
+    //アイキャッチ画像の登録
+    add_theme_support('post-thumbnails');
 }
 add_action('after_setup_theme', 'theme_setup');
 
@@ -24,3 +26,22 @@ function add_menus() {
     ));
 }
 add_action('after_setup_theme', 'add_menus');
+
+/* the_archive_title 余計な文字を削除 */
+add_filter( 'get_the_archive_title', function ($title) {
+    if (is_category()) {
+        $title = single_cat_title('',false);
+	}
+    return $title;
+});
+
+//pタグを削除
+add_action('init', function() {
+    remove_filter('the_excerpt', 'wpautop');
+    remove_filter('the_content', 'wpautop');
+});
+add_filter('tiny_mce_before_init', function($init) {
+    $init['wpautop'] = false;
+    $init['apply_source_formatting'] = true;
+    return $init;
+});

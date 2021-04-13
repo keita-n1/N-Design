@@ -346,11 +346,22 @@ ________________________________________*/
     transform: translateX(-300px);
 }
 
+/* wp
+____________________________________________*/
+.attachment-post-thumbnail {
+    margin-bottom: 20px;
+}
+
 /*-------------------------
 レスポンシブ
 --------------------------*/
 @media screen and (min-width: 600px) {
-
+    /*card*/
+    .bl_cardUnit_3col {
+        display: grid;
+        gap: 40px;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
 }
 @media screen and (min-width: 1025px) {
     /*layout
@@ -388,12 +399,6 @@ ________________________________________*/
     }
     .bl_headerNav > .menu-item {
         margin-bottom: 0px;
-    }
-    /*card*/
-    .bl_cardUnit_3col {
-        display: grid;
-        gap: 40px;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
     /*card service*/
     .bl_cardUnit__service {
