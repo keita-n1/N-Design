@@ -34,6 +34,10 @@ ________________________________________*/
     justify-content: space-between;
     align-items: center;
 }
+.ly_header__border {
+    border-bottom: 1px solid #D7A200;
+    margin-bottom: 40px;
+}
 .ly_section {
     padding: 0 30px;
     margin-bottom: 120px;
