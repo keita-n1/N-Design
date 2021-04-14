@@ -31,9 +31,9 @@ add_action('after_setup_theme', 'add_menus');
 
 /* the_archive_title 余計な文字を削除 */
 add_filter( 'get_the_archive_title', function ($title) {
-    if (is_category()) {
+    if (is_category() || is_tax() ) {
         $title = single_cat_title('',false);
-	}
+    }
     return $title;
 });
 

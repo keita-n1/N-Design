@@ -14,8 +14,11 @@
                 <p><?php the_excerpt(); ?></p>
             </a>
                 <?php
-                endwhile;
-            endif;
+                endwhile; else:?>
+                <article>
+                    <p>該当の記事はありません</p>
+                </article>
+            <?php endif;
             ?>
         </div>
         <!--/.bl_cardUnit_3col-->
