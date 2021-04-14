@@ -11,7 +11,6 @@
             $terms = get_terms('design', $args);
             foreach ($terms as $term):
             ?>
-            
             <a class="bl_cardUnit bl_cardUnit__gold" href="<?php echo get_term_link($term); ?>">
                 <?php
                 $image_id = get_field('img', $term->taxonomy. '_'. $term->term_id);
@@ -19,7 +18,7 @@
                 ?>
                 <p class="bl_cardUnit_tit"><?php echo $term->name; ?></p>
             </a>
-                <?php
+            <?php
             endforeach;
             ?>
         </div><!--/.bl_cardUnit_3col-->
