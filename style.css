@@ -363,8 +363,10 @@ ________________________________________*/
 
 /* wp
 ____________________________________________*/
-.attachment-post-thumbnail {
+.attachment-post-thumbnail,
+.attachment-large {
     margin-bottom: 20px;
+    height: 260px;
 }
 
 /*-------------------------

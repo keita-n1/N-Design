@@ -47,3 +47,13 @@ add_filter('tiny_mce_before_init', function($init) {
     $init['apply_source_formatting'] = true;
     return $init;
 });
+
+//サブクエリ
+function new_query() {
+    $args = [
+        'post_type' => 'the_work',
+        'post_per_page' => 6,
+    ];
+    $query = new WP_Query($args);
+    return $query;
+}
