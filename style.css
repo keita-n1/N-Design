@@ -83,6 +83,7 @@ ____________________________________________ */
     cursor: pointer;
     font-weight: bold;
     overflow: hidden;
+    outline: none;
 }
 .el_btn::before,
 .el_btn::after {
@@ -136,6 +137,7 @@ ________________________________________*/
 .bl_headLogo {
     padding: 30px;
     width: 200px;
+    height: 100px;
 }
 .bl_headerNav_wrap {
     position: fixed;
@@ -173,6 +175,8 @@ ________________________________________*/
 /*mainImg*/
 .bl_mainImg {
     margin-bottom: 80px;
+    width: 100%;
+    height: calc(100vh - 100px);
 }
 /*ハンバーガー*/
 .bl_hamburger {
@@ -306,6 +310,12 @@ ________________________________________*/
     transform: rotate(-15deg);
     color: #D7A200;
     text-shadow: 4px 4px 8px #333;
+}
+.bl_cardUnit:hover .bl_cardUnit_tit {
+    bottom: 0;
+    right: 0;
+    font-size: 5rem;
+    transition: all .3s;
 }
 /*form*/
 form {

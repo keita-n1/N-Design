@@ -9,7 +9,11 @@
     </head>
     <body <?php body_class(); ?>>
         <!--header-->
+        <?php if (is_front_page() ): ?>
         <div class="ly_header">
+        <?php else: ?>
+        <div class="ly_header ly_header__border">
+        <?php endif; ?>
             <!--logo-->
             <a href="<?php echo esc_url(home_url() ); ?>"><img class="bl_headLogo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/N-Design_logo.png" alt="logo"></a>
             <!--hamburger-->
