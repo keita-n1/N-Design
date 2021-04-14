@@ -33,3 +33,9 @@
             wp_nav_menu($args);
             ?>
         </div><!--/.ly_header-->
+        <?php
+        if (!is_front_page() ):
+            get_template_part('template-parts/breadcrumb');
+        endif;
+        
+
