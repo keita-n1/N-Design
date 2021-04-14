@@ -370,6 +370,9 @@ ____________________________________________ */
 .hp_taC {
     text-align: center !important;
 }
+.hp_mbM {
+    margin-bottom: 40px !important;
+}
 /* js
 ________________________________________*/
 .js_drawer {
@@ -401,6 +404,7 @@ ____________________________________________*/
     }
     .bl_pagination_prev {
         margin-bottom: 0;
+        margin-right: 40px;
     }
 }
 @media screen and (min-width: 1025px) {
