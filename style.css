@@ -62,6 +62,7 @@ ____________________________________________ */
     font-size: 5rem;
     margin-bottom: 80px;
     letter-spacing: 0.1em;
+    font-family: 'Rajdhani', sans-serif;
 }
 .el_lv3Heading {
     font-size: 2rem;
@@ -72,6 +73,7 @@ ____________________________________________ */
     display: inline-block;
     width: 200px;
     height: 40px;
+    padding-top: 5px;
     background-color: transparent;
     border: 1px solid #D7A200;
     color: #D7A200;
@@ -80,6 +82,7 @@ ____________________________________________ */
     font-weight: bold;
     overflow: hidden;
     outline: none;
+    font-family: 'Rajdhani', sans-serif;
 }
 .el_btn::before,
 .el_btn::after {
@@ -153,6 +156,7 @@ ________________________________________*/
     margin: 0;
     text-align: center;
     list-style: none;
+    font-family: 'Rajdhani', sans-serif;
 }
 .bl_headerNav > .menu-item {
     margin-bottom: 40px;
