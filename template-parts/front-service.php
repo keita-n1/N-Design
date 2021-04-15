@@ -5,7 +5,7 @@
                 <img src="<?php the_field('img'); ?>" alt="webdesign">
             <?php endif; ?>
         </figure>
-        <p class="bl_cardUnit_txt"><?php the_field('text'); ?></p>
+        <p class="bl_cardUnit_txt js_fadein"><?php the_field('text'); ?></p>
     </div>
     <!--/.bl_cardUnit-->
     <div class="bl_cardUnit bl_cardUnit__service">
@@ -14,7 +14,7 @@
                 <img src="<?php the_field('img2'); ?>" alt="cording">
             <?php endif; ?>
         </figure>
-        <p class="bl_cardUnit_txt"><?php the_field('text2'); ?></p>
+        <p class="bl_cardUnit_txt js_fadein"><?php the_field('text2'); ?></p>
     </div>
     <!--/.bl_cardUnit-->
     <div class="bl_cardUnit bl_cardUnit__service">
@@ -23,7 +23,7 @@
                 <img src="<?php the_field('img3'); ?>" alt="wordpress">
             <?php endif; ?>
         </figure>
-        <p class="bl_cardUnit_txt"><?php the_field('text3'); ?></p>
+        <p class="bl_cardUnit_txt js_fadein"><?php the_field('text3'); ?></p>
     </div>
     <!--/.bl_cardUnit-->
 </div>

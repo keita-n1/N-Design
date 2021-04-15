@@ -373,8 +373,15 @@ ____________________________________________ */
 }
 /* js
 ________________________________________*/
+/*ドロワー*/
 .js_drawer {
     transform: translateX(-300px);
+}
+/*スクロールフェードイン*/
+.js_fadein {
+    opacity : 0;
+    transform: translateY(20px);
+    transition: all 1s;
 }
 
 /* wp
