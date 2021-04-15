@@ -29,10 +29,6 @@ object-fit: cover;
 figure {
 margin: 0;
 }
-ul {
-    list-style: none;
-    padding: 0;
-}
 p {
     line-height: 1.7em;
 }
@@ -153,8 +149,10 @@ ________________________________________*/
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    padding-left: 0;
     margin: 0;
     text-align: center;
+    list-style: none;
 }
 .bl_headerNav > .menu-item {
     margin-bottom: 40px;
@@ -169,8 +167,10 @@ ________________________________________*/
 .bl_footerNav {
     display: flex;
     justify-content: space-between;
+    padding-left: 0;
     margin: 0 auto 40px;
     max-width: 400px;
+    list-style: none;
 }
 /*mainImg*/
 .bl_mainImg {
@@ -335,7 +335,6 @@ form textarea {
 form textarea {
     height: 140px;
     padding: 15px;
-    margin-bottom: 40px;
 }
 form input:hover,
 form textarea:hover,
@@ -344,7 +343,6 @@ form textarea:focus {
     background-color: rgba(215, 162, 0, 0.3);
 }
 form span {
-    margin-top: -10px;
     margin-bottom: 20px;
     text-align: right;
 }
@@ -386,6 +384,12 @@ ____________________________________________*/
     margin-bottom: 20px;
     height: 260px;
 }
+.wp-block-media-text.is-stacked-on-mobile .wp-block-media-text__media {
+    margin-bottom: 40px;
+}
+button.el_btn {
+    margin-top: 40px;
+}
 
 /*-------------------------
 レスポンシブ
@@ -405,6 +409,9 @@ ____________________________________________*/
     .bl_pagination_prev {
         margin-bottom: 0;
         margin-right: 40px;
+    }
+    .wp-block-media-text.is-stacked-on-mobile .wp-block-media-text__media {
+        margin-bottom: 0;
     }
 }
 @media screen and (min-width: 1025px) {
