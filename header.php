@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, minmum-scale=1">
         <!--google-font-->
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
