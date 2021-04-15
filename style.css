@@ -282,6 +282,9 @@ ________________________________________*/
     margin: 0 auto 40px;
     display: block;
 }
+.bl_cardUnit > img {
+    height: 260px;
+}
 .bl_cardUnit_img {
     width: 180px;
     height: 120px;
@@ -309,18 +312,19 @@ ________________________________________*/
 }
 .bl_cardUnit_tit {
     position: absolute;
-    bottom: -15px;
+    bottom: -30px;
     right: -10px;
     font-size: 4rem;
-    transform: rotate(-15deg);
+    font-family: 'Rajdhani', sans-serif;
     color: #D7A200;
-    text-shadow: 4px 4px 8px #333;
 }
 .bl_cardUnit:hover .bl_cardUnit_tit {
     bottom: 0;
     right: 0;
     font-size: 5rem;
     transition: all .3s;
+    transform: rotate(-15deg);
+    text-shadow: 2px 2px 4px #000;
 }
 /*form*/
 form {
