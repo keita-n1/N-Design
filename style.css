@@ -345,6 +345,19 @@ ________________________________________*/
     background-color: #D7A200;
     margin-bottom: 10px;
 }
+/*タイトルと日付*/
+.bl_tit {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.bl_tit > .el_lv2Heading {
+    width: 80%;
+}
+.bl_tit_date {
+    width: 20%;
+    text-align: right;
+}
 /*form*/
 form {
     max-width: 500px;

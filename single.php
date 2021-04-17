@@ -5,7 +5,10 @@
         if (have_posts() ):
             while (have_posts() ): the_post();
             ?>
-        <h2 class=el_lv2Heading><?php the_title(); ?></h2>
+        <div class="bl_tit">
+            <h2 class=el_lv2Heading><?php the_title(); ?></h2>
+            <div class="bl_tit_date"><?php the_date(); ?></div>
+        </div>
         <div class="bl_cont"><?php the_content(); ?></div>
             <?php
             endwhile;
