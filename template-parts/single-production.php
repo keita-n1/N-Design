@@ -9,12 +9,8 @@
         <div class="bl_productionItem_stroke"></div>
         <div class="bl_productionItem_txt"><?php the_field('goal'); ?></div>
     </div>
-    <!--term web only-->
-    <?php
-    global $post;
-    $slug = $post->post_name;
-    if (is_single($slug) ):
-    ?>
+    <!--slug web only-->
+    <?php if (is_object_in_term($post->ID, 'design', 'web') ): ?>
     <div class="bl_productionItem_item">
         <h4 class="bl_productionItem_tit">ターゲット</h4>
         <div class="bl_productionItem_stroke"></div>
