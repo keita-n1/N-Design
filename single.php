@@ -11,7 +11,9 @@
             endwhile;
         endif;
         //制作項目
-        get_template_part('template-parts/single-production');
+        if (is_object_in_term($post->ID, 'design') ):
+            get_template_part('template-parts/single-production');
+        endif;
         ?>
         <!--ページネーション-->
         <div class="bl_pagination">
