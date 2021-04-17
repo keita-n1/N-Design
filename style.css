@@ -67,6 +67,9 @@ ____________________________________________ */
 .el_lv3Heading {
     font-size: 2rem;
 }
+.el_lv4Heading {
+    font-size: 1.8rem;
+}
 /*button*/
 .el_btn {
     position: relative;
@@ -325,6 +328,22 @@ ________________________________________*/
     transition: all .3s;
     transform: rotate(-15deg);
     text-shadow: 2px 2px 4px #000;
+}
+/*制作項目*/
+.bl_productionItem {
+    margin-bottom: 80px;
+}
+.bl_productionItem_item {
+    margin-bottom: 20px;
+}
+.bl_productionItem_tit {
+    font-size: 1.8rem;
+}
+.bl_productionItem_stroke {
+    width: 200px;
+    height: 1px;
+    background-color: #D7A200;
+    margin-bottom: 10px;
 }
 /*form*/
 form {

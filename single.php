@@ -10,7 +10,10 @@
             <?php
             endwhile;
         endif;
+        //制作項目
+        get_template_part('template-parts/single-production');
         ?>
+        <!--ページネーション-->
         <div class="bl_pagination">
             <div class="bl_pagination_prev"><?php previous_post_link('%link', '<i class="fas fa-angle-left"></i> %title'); ?></div>
             <div class="bl_pagination_next"><?php next_post_link('%link', '%title <i class="fas fa-angle-right"></i>'); ?></div>
