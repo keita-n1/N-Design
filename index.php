@@ -31,3 +31,5 @@
     </div><!--/.ly_section_inner-->
 </section>
 <?php get_footer();
+
+require __DIR__ . '/wp/wp-blog-header.php';
