@@ -181,10 +181,18 @@ ________________________________________*/
     font-family: 'Rajdhani', sans-serif;
 }
 /*mainImg*/
+.bl_mainImg_wrapper {
+    position: relative;
+}
 .bl_mainImg {
     margin-bottom: 80px;
     width: 100%;
     height: calc(100vh - 100px);
+}
+#lottie {
+    position: absolute;
+    top: 30%;
+    left: 60%;
 }
 /*ハンバーガー*/
 .bl_hamburger {
