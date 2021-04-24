@@ -6,7 +6,6 @@ function enqueue_scripts() {
     wp_enqueue_style('main-css', get_stylesheet_uri());
     //JavaScript,jQuery読み込み
     wp_enqueue_script('jquery-min-js', get_stylesheet_directory_uri() . '/script/jquery-3.6.0.min.js', array(), '3.6.0', true );
-    wp_enqueue_script('lottie-min-js', get_stylesheet_directory_uri() . '/script/lottie.min.js', array(), '', true );
     wp_enqueue_script('custom-script', get_stylesheet_directory_uri() . '/script/script.js', array('jquery-min-js'), '', true );
     //fontawesome
     wp_enqueue_style('fontawesome', 'https://use.fontawesome.com/releases/v5.2.0/css/all.css');
