@@ -2,7 +2,7 @@
 <!--mainImg-->
 <div class="bl_mainImg_wrapper">
     <img class="bl_mainImg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/main-img.jpg" alt="メインイメージ">
-    <div id="lottie"></div>
+    <div class="js_lottie"></div>
 </div>
 <!--service section-->
 <section class="ly_section">

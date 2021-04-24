@@ -26,10 +26,10 @@ $(function(){
 });
 
 //lottie
-let animation = lottie.loadAnimation({
-    container: document.getElementById('lottie'), 
-    renderer: 'svg', // 描画形式
-    loop: true, // trueにしたらループ。1回再生の場合はfalse
-    autoplay: true, // 自動再生
-    path: 'data.json' // jsonのパスを指定
+bodymovin.loadAnimation({
+    container: document.querySelector('.js_lottie'),
+    renderer: 'svg', //'svg' / 'canvas' / 'html'の中から選ぶことができます。
+    loop: true, //ループ再生するのかを選びます（true/false）
+    autoplay: true, //自動再生するかどうかを選択します（true/false）
+    path: 'data.json' //jsonまでのパスを記述します。出力したjsonの名前は適宜変える必要があります。
 });

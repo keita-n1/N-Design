@@ -15,6 +15,7 @@
     <!--/.ly_footer_inner-->
 </footer>
 <!--js読み込み-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie.min.js"></script>
 <?php wp_footer(); ?>
 </body>
 
