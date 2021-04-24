@@ -24,12 +24,3 @@ $(function(){
         });
     });
 });
-
-//lottie
-bodymovin.loadAnimation({
-    container: document.querySelector('.js_lottie'),
-    renderer: 'svg', //'svg' / 'canvas' / 'html'の中から選ぶことができます。
-    loop: true, //ループ再生するのかを選びます（true/false）
-    autoplay: true, //自動再生するかどうかを選択します（true/false）
-    path: 'data.json' //jsonまでのパスを記述します。出力したjsonの名前は適宜変える必要があります。
-});

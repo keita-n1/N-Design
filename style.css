@@ -189,11 +189,65 @@ ________________________________________*/
     width: 100%;
     height: calc(100vh - 100px);
 }
-#lottie {
+.bl_mainImg_tit {
     position: absolute;
-    top: 30%;
-    left: 60%;
+    top: 50%;
+    right: 10%;
+    font-size: 3rem;
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 0.1em;
 }
+.bl_mainImg_scroll{
+    position:absolute;
+    right:50%;
+    /*矢印の動き1秒かけて永遠にループ*/
+    animation: arrowmove 2s ease-in-out infinite;
+}
+@keyframes arrowmove{
+    0%{bottom:3%;}
+    50%{bottom:5%;}
+    100%{bottom:3%;}
+}
+/*Scrollテキストの描写*/
+.bl_mainImg_scroll span{
+    /*描画位置*/
+    position: absolute;
+    left:-20px;
+    bottom:10px;
+    /*テキストの形状*/
+    color: #333;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    /*縦書き設定*/
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+/* 矢印の描写 */
+.bl_mainImg_scroll:before {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    bottom: 0;
+    right: -6px;
+    /*矢印の形状*/
+    width: 1px;
+    height: 20px;
+    background: #333;
+    transform: skewX(-31deg);
+}
+.bl_mainImg_scroll:after{
+    content:"";
+    /*描画位置*/
+    position: absolute;
+    bottom:0;
+    right:0;
+    /*矢印の形状*/
+    width:1px;
+    height: 50px;
+    background:#333;
+}
+
 /*ハンバーガー*/
 .bl_hamburger {
     position: relative;
@@ -451,6 +505,10 @@ button.el_btn {
 レスポンシブ
 --------------------------*/
 @media screen and (min-width: 600px) {
+    /*main_tit*/
+    .bl_mainImg_tit {
+        font-size: 4rem;
+    }
     /*card*/
     .bl_cardUnit_3col {
         display: grid;
@@ -486,6 +544,10 @@ button.el_btn {
     }
     /*block
     _________________________________________*/
+    /*main_tit*/
+    .bl_mainImg_tit {
+        font-size: 5rem;
+    }
     /*hamburger*/
     .bl_hamburger {
         display: none;

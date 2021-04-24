@@ -2,7 +2,8 @@
 <!--mainImg-->
 <div class="bl_mainImg_wrapper">
     <img class="bl_mainImg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/main-img.jpg" alt="メインイメージ">
-    <div class="js_lottie"></div>
+    <h1 class="bl_mainImg_tit"><?php bloginfo('description'); ?></h1>
+    <div class="bl_mainImg_scroll"><span>Scroll</span></div>
 </div>
 <!--service section-->
 <section class="ly_section">
@@ -22,7 +23,12 @@
 <!--works section-->
 <section class="ly_section">
     <div class="ly_section_inner">
-        <h2 class="el_lv2Heading">Works</h2>
+        <h2 class="el_lv2Heading">
+            <?php
+            $works_object = get_page_by_path('Works');
+            echo $works_object->post_title;
+            ?>
+        </h2>
         <div class="bl_cardUnit_3col">
             <?php get_template_part('template-parts/loop-works'); ?>
         </div><!--/.bl_cardUnit_3col-->
