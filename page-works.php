@@ -2,7 +2,12 @@
 <!--works section-->
 <section class="ly_section">
     <div class="ly_section_inner">
-        <h2 class="el_lv2Heading">Works</h2>
+        <h2 class="el_lv2Heading">
+            <?php
+            $works_object = get_page_by_path('Works');
+            echo $works_object->post_title;
+            ?>
+        </h2>
         <div class="bl_cardUnit_3col">
             <?php
             $args = [
