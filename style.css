@@ -59,7 +59,7 @@ ________________________________________*/
 ____________________________________________ */
 /*head*/
 .el_lv2Heading {
-    font-size: 5rem;
+    font-size: 4rem;
     margin-bottom: 80px;
     letter-spacing: 0.1em;
     font-family: 'Rajdhani', sans-serif;
@@ -407,18 +407,11 @@ ________________________________________*/
     background-color: #D7A200;
     margin-bottom: 10px;
 }
-/*タイトルと日付*/
 .bl_tit {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    margin-bottom: 80px;
 }
 .bl_tit > .el_lv2Heading {
-    width: 80%;
-}
-.bl_tit_date {
-    width: 20%;
-    text-align: right;
+    margin-bottom: 0;
 }
 /*form*/
 form {
@@ -505,6 +498,14 @@ button.el_btn {
 レスポンシブ
 --------------------------*/
 @media screen and (min-width: 600px) {
+    /*element
+    _________________________________________*/
+    /*heading*/
+    .el_lv2Heading {
+        font-size: 4.5rem;
+    }
+    /*block
+    _________________________________________*/
     /*main_tit*/
     .bl_mainImg_tit {
         font-size: 4rem;
@@ -527,7 +528,20 @@ button.el_btn {
     .wp-block-media-text.is-stacked-on-mobile .wp-block-media-text__media {
         margin-bottom: 0;
     }
-}
+    /*タイトルと日付*/
+    .bl_tit {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .bl_tit > .el_lv2Heading {
+        width: 80%;
+    }
+    .bl_tit_date {
+        width: 20%;
+        text-align: right;
+    }
+    }
 @media screen and (min-width: 1025px) {
     /*layout
     _________________________________________*/
@@ -541,6 +555,12 @@ button.el_btn {
         justify-content: space-between;
         width: 920px;
         margin: 0 auto;
+    }
+    /*element
+    _________________________________________*/
+    /*heading*/
+    .el_lv2Heading {
+        font-size: 5rem;
     }
     /*block
     _________________________________________*/
